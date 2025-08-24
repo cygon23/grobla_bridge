@@ -76,11 +76,11 @@ const Impact = () => {
   ];
 
   const milestones = [
-    "2020: Founded with a vision to bridge global communities",
-    "2021: Launched first education program in East Africa",
-    "2022: Expanded to 5 countries with 10+ active programs",
-    "2023: Reached 25,000+ beneficiaries across our initiatives",
-    "2024: Celebrating 50,000+ lives impacted worldwide"
+    "2023: Founded with a vision to bridge global communities",
+    "2024: Launched first education program in East Africa",
+    "2025: Expanded to 5 countries with 10+ active programs",
+    "2026: Reached 25,000+ beneficiaries across our initiatives",
+    "2030: Celebrating 50,000+ lives impacted worldwide",
   ];
 
   useEffect(() => {
