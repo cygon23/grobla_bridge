@@ -11,6 +11,8 @@ import {
   Calendar
 } from 'lucide-react';
 
+import avator from "../../assets/testmonial/testmonial.jpeg";
+
 const Impact = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [counters, setCounters] = useState({
@@ -53,26 +55,29 @@ const Impact = () => {
 
   const testimonials = [
     {
-      quote: "Global Bridging Center transformed our community's approach to education. The impact is remarkable.",
+      quote:
+        "Global Bridging Center transformed our community's approach to education. The impact is remarkable.",
       author: "Sarah Mwangi",
       position: "Community Leader",
       location: "Nairobi, Kenya",
-      image: "/src/assets/carousel1.jpg"
+      image: avator,
     },
     {
-      quote: "Through their programs, I gained skills that changed my life and my family's future forever.",
+      quote:
+        "Through their programs, I gained skills that changed my life and my family's future forever.",
       author: "Abdul Rahman",
       position: "Program Beneficiary",
       location: "Lagos, Nigeria",
-      image: "/src/assets/carousel2.jpg"
+      image: avator,
     },
     {
-      quote: "The partnership approach ensures sustainable development that truly serves local needs.",
+      quote:
+        "The partnership approach ensures sustainable development that truly serves local needs.",
       author: "Dr. Maria Santos",
       position: "Development Expert",
       location: "Manila, Philippines",
-      image: "/src/assets/carousel3.jpg"
-    }
+      image: avator,
+    },
   ];
 
   const milestones = [
@@ -151,24 +156,27 @@ const Impact = () => {
             return (
               <div
                 key={achievement.label}
-                className={`card-feature text-center scroll-trigger ${isVisible ? 'in-view' : ''} group`}
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors duration-300">
-                  <IconComponent className="w-8 h-8 text-primary" />
+                className={`card-feature text-center scroll-trigger ${
+                  isVisible ? "in-view" : ""
+                } group`}
+                style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className='w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors duration-300'>
+                  <IconComponent className='w-8 h-8 text-primary' />
                 </div>
-                
-                <div className="text-4xl md:text-5xl font-bold text-foreground mb-2">
-                  {index === 0 ? `${(currentValue / 1000).toFixed(0)}K+` :
-                   index === 2 ? `${currentValue}+` :
-                   `${currentValue}+`}
+
+                <div className='text-4xl md:text-5xl font-bold text-foreground mb-2'>
+                  {index === 0
+                    ? `${(currentValue / 1000).toFixed(0)}+`
+                    : index === 2
+                    ? `${currentValue}+`
+                    : `${currentValue}+`}
                 </div>
-                
-                <h3 className="text-xl font-poppins font-bold text-foreground mb-3">
+
+                <h3 className='text-xl font-poppins font-bold text-foreground mb-3'>
                   {achievement.label}
                 </h3>
-                
-                <p className="text-muted-foreground leading-relaxed">
+
+                <p className='text-muted-foreground leading-relaxed'>
                   {achievement.description}
                 </p>
               </div>

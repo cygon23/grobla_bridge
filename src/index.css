@@ -16,12 +16,20 @@
     /* Exact Brand Colors - No Variations */
     --primary: 200 79% 47%;        /* #1C9DD7 */
     --primary-foreground: 0 0% 100%;
+    --primary-glow: 200 79% 60%;   /* Lighter version for effects */
     
     --secondary: 110 60% 34%;      /* #318E23 */
     --secondary-foreground: 0 0% 100%;
     
     --accent: 53 96% 70%;          /* #FDE869 */
     --accent-foreground: 213 31% 9%;
+    
+    /* Additional Brand Colors */
+    --nature: 110 60% 34%;         /* Same as secondary */
+    --nature-foreground: 0 0% 100%;
+    
+    --trust: 200 79% 47%;          /* Same as primary */
+    --trust-foreground: 0 0% 100%;
     
     /* UI Colors */
     --card: 0 0% 100%;
@@ -72,12 +80,20 @@
     /* Exact Brand Colors - Dark Mode */
     --primary: 200 79% 47%;        /* #1C9DD7 */
     --primary-foreground: 0 0% 100%;
+    --primary-glow: 200 79% 60%;   /* Lighter version for effects */
     
     --secondary: 110 60% 34%;      /* #318E23 */
     --secondary-foreground: 0 0% 100%;
     
     --accent: 53 96% 70%;          /* #FDE869 */
     --accent-foreground: 213 31% 9%;
+    
+    /* Additional Brand Colors */
+    --nature: 110 60% 34%;         /* Same as secondary */
+    --nature-foreground: 0 0% 100%;
+    
+    --trust: 200 79% 47%;          /* Same as primary */
+    --trust-foreground: 0 0% 100%;
     
     /* UI Colors */
     --card: 213 31% 8%;
@@ -155,9 +171,14 @@
   }
   
   .card-feature {
-    @apply bg-card border border-border/30 rounded-3xl p-8 shadow-medium;
+    @apply bg-card border border-border/20 rounded-3xl p-8 shadow-medium;
     @apply hover:shadow-xl hover:scale-[1.02] transition-all duration-500;
-    @apply backdrop-blur-sm;
+    @apply backdrop-blur-sm relative overflow-hidden;
+  }
+  
+  .card-feature::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none;
   }
   
   .card-interactive {

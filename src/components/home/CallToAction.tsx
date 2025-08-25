@@ -205,6 +205,8 @@ const CallToAction = () => {
                   <a
                     key={platform.name}
                     href={platform.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`card-interactive scroll-trigger ${
                       isVisible ? "in-view" : ""
                     } group relative ${
