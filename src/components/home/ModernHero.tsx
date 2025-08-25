@@ -10,21 +10,24 @@ const ModernHero = () => {
     {
       title: "Building Bridges for",
       highlight: "Global Development",
-      description: "Empowering communities worldwide through education, sustainable development, and meaningful partnerships.",
-      image: "/src/assets/carousel1.jpg"
+      description:
+        "Empowering communities worldwide through education, sustainable development, and meaningful partnerships.",
+      image: "/src/assets/carousel1.jpg",
     },
     {
       title: "Transforming Lives Through",
-      highlight: "Education & Innovation",
-      description: "Creating lasting impact through strategic programs, innovative solutions, and community-driven initiatives.",
-      image: "/src/assets/carousel2.jpg"
+      highlight: "Innovation & Collaboration",
+      description:
+        "Creating lasting impact through strategic programs, innovative solutions, and community-driven initiatives.",
+      image: "/src/assets/carousel2.jpg",
     },
     {
       title: "Fostering Unity for",
       highlight: "Sustainable Future",
-      description: "Connecting diverse communities to build a more equitable and sustainable world for future generations.",
-      image: "/src/assets/carousel3.jpg"
-    }
+      description:
+        "Connecting diverse communities to build a more equitable and sustainable world for future generations.",
+      image: "/src/assets/carousel3.jpg",
+    },
   ];
 
   const stats = [
