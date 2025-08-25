@@ -89,12 +89,15 @@ const ModernHero = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}>
           {/* Hero Badge */}
-          <div className='inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-scale-in'>
-            <Globe className='w-4 h-4 text-primary mr-2' />
-            <span className='text-sm font-medium text-primary'>
-              Est. 2020 • NGO Registration: 00NGO/R/7452
-            </span>
-          </div>
+
+          {/* <div className='flex justify-center mb-8 mt-4'>
+            <div className='inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 animate-scale-in'>
+              <Globe className='w-4 h-4 text-primary mr-2' />
+              <span className='text-sm font-medium text-primary'>
+                Est. 2020 • NGO Registration: 00NGO/R/7452
+              </span>
+            </div>
+          </div> */}
 
           {/* Main Headlines with Animation */}
           <div className='mb-8'>
