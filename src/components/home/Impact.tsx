@@ -81,11 +81,11 @@ const Impact = () => {
   ];
 
   const milestones = [
-    "2023: Founded with a vision to bridge global communities",
-    "2024: Launched first education program in East Africa",
-    "2025: Expanded to 5 countries with 10+ active programs",
-    "2026: Reached 25,000+ beneficiaries across our initiatives",
-    "2030: Celebrating 50,000+ lives impacted worldwide",
+    "2020:  Founded as an informal movement with a vision to bridge global communities, empower marginalized groups, and realize sustainable development through collaboration and innovation ",
+    "2024:  Officially registered in Tanzania as a Non-Governmental Organization (NGO), with a mission to foster cooperation, build partnerships, and advance inclusive development",
+    "2025:  Initially expanding operations to atleast 5 countries from both either the global north and south, running 10+ active programs addressing civic engagement, climate action, legal empowerment, and community development",
+    "2027:  Aiming to reach over 25,000 beneficiaries across Africa and beyond through transformative initiatives and inclusive community-based solutions.",
+    "2030:  To celebrate more than 50,000 lives positively impacted worldwide, establishing GBCSD as a global hub for innovation, collaboration, and shared progress.",
   ];
 
   useEffect(() => {
